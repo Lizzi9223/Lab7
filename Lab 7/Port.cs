@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -104,6 +105,10 @@ namespace Lab_7
                     SteamersQuant++;
                 }
             }
+
+            //ASSERT
+            //Debug.Assert(SteamersQuant != 0, "ASSERT CHECK!!!!!!");  
+
             //EXCEPTION_CHECK
             if (SteamersQuant == 0) throw new DivideByZeroException();
             return (int)(seats / SteamersQuant);
