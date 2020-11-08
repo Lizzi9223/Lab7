@@ -59,6 +59,9 @@ namespace Lab_7
                 catch (YearOfSteamerCreationException ex)
                 {
                     Console.WriteLine("YearOfSteamerCreationException");
+                    Console.WriteLine($"Исключение: {ex.Message}");
+                    Console.WriteLine($"Метод: {ex.TargetSite}");
+                    Console.WriteLine($"Трассировка стека: {ex.StackTrace}\n\n");
                 }
                 try
                 {
@@ -67,6 +70,9 @@ namespace Lab_7
                 catch (BoatCapacityException ex)
                 {
                     Console.WriteLine("BoatCapacityException");
+                    Console.WriteLine($"Исключение: {ex.Message}");
+                    Console.WriteLine($"Метод: {ex.TargetSite}");
+                    Console.WriteLine($"Трассировка стека: {ex.StackTrace}\n\n");
                 }
                 try
                 {
@@ -75,6 +81,9 @@ namespace Lab_7
                 catch (SailsColorException ex)
                 {
                     Console.WriteLine("SailsColorException");
+                    Console.WriteLine($"Исключение: {ex.Message}");
+                    Console.WriteLine($"Метод: {ex.TargetSite}");
+                    Console.WriteLine($"Трассировка стека: {ex.StackTrace}\n\n");
                 }
                 try
                 {                    
@@ -87,6 +96,9 @@ namespace Lab_7
                 catch (DivideByZeroException ex)
                 {
                     Console.WriteLine("DivideByZeroException");
+                    Console.WriteLine($"Исключение: {ex.Message}");
+                    Console.WriteLine($"Метод: {ex.TargetSite}");
+                    Console.WriteLine($"Трассировка стека: {ex.StackTrace}\n\n");
                 }
                 try
                 {
@@ -95,6 +107,9 @@ namespace Lab_7
                 catch (IndexOutOfRangeException ex)
                 {
                     Console.WriteLine("IndexOutOfRangeException");
+                    Console.WriteLine($"Исключение: {ex.Message}");
+                    Console.WriteLine($"Метод: {ex.TargetSite}");
+                    Console.WriteLine($"Трассировка стека: {ex.StackTrace}\n\n");
                 }                
             }
             catch (Exception ex)
@@ -103,7 +118,7 @@ namespace Lab_7
             }
             finally
             {
-                Console.WriteLine("The program is done. It's a finally block.");
+                Console.WriteLine("The program is done. It's a \"finally\" block.");
             }
         }
     }

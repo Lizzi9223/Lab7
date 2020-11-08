@@ -68,7 +68,7 @@ namespace Lab_7
         {            
             SeatsQuant = b;
             //EXCEPTION_CHECK
-            if (a > 2020) throw new YearOfSteamerCreationException($"Year {a} is future. It's impossible to create a steamer in this year right now!\n");
+            if (a > 2020) throw new YearOfSteamerCreationException($"Year {a} is future. It's impossible to create a steamer in this year right now!");
             year_of_creation = a;
         }
         class Steam_engine
@@ -93,7 +93,7 @@ namespace Lab_7
         {
             engine = a;
             //EXCEPTION_CHECK
-            if (b > 20 || b == 0) throw new BoatCapacityException($"{b} - impossible boat capacity!\n"); 
+            if (b > 20 || b == 0) throw new BoatCapacityException($"{b} - impossible boat capacity!"); 
             capacity = b;
         }
         public override string ToString()
@@ -127,7 +127,7 @@ namespace Lab_7
         public Sailboat(string a = "", string b = "", int c = 0)
         {
             //EXCEPTION_CHECK
-            if (a == "black") throw new SailsColorException("Black is a pirates' color!\n");
+            if (a == "black") throw new SailsColorException("Black is a pirates' color!");
             sail_color = a;
             sail_material = b;
             water = c;
